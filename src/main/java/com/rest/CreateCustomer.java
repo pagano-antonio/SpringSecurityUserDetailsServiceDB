@@ -19,6 +19,12 @@ public class CreateCustomer {
 	@Autowired
 	private CustomerRepository customerRepository;
 
+	//localhost:8080/customer
+//	{
+//		"email": "user@gmail.com",
+//	    "pwd": "1234",
+//	    "role": "admin"
+//	}
 	@PostMapping
 	public void createCustomer(@RequestBody Customer customer) {
 
